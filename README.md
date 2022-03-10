@@ -6,7 +6,7 @@ Bioinformatics BIMM143 W22 at UC San Diego.
 - Class 07 [Introduction to Machine Learning](https://github.com/arifon134340/BIMM143/blob/main/class07/class7.pdf)
 - Class 08 [Cancer Mini Project](https://github.com/arifon134340/BIMM143/blob/main/class08/class8-Mini-Project.pdf)
 - Class 09 [Structural Bioinformatics](https://github.com/arifon134340/BIMM143/blob/main/class09/class9.pdf)
-- Class 10 [Genome Informatics]
+- Class 10 [Genome Informatics](https://github.com/arifon134340/BIMM143/blob/main/class10/class10.pdf)
 - Class 11 [Transcriptomics and the analysis of RNA-Seq data]
 - Class 12 [RNA-Seq analysis mini-project]
 - Class 13 [Essential UNIX for bioinformatics]
