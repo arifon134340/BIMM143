@@ -1,0 +1,51 @@
+---
+title: "Zebrafish UNIX"
+author: 'Ari_Fon (PID: A15390446)'
+date: "3/1/2022"
+output: pdf_document
+---
+Read the results TV file from BLAST
+```{r}
+blast <- read.table("mm-second.x.zebrafish.tsv")
+head(blast)
+```
+
+Set the column names
+```{r}
+colnames(blast) <- c("qseqid", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
+```
+
+Plot some aspects of the results
+
+```{r}
+plot(blast$pident, blast$bitscore)
+#blast results are stored in an object called "b"
+#plot(b$pident  * (b$qend - b$qstart), b$bitscore) 
+```
+
+
+```{r}
+#lets try using ggplot2
+
+library(ggplot2)
+ggplot(blast, aes(pident, bitscore)) + geom_point(alpha=0.1) 
+```
+
+
+
+```{r}
+library(ggplot2)
+ggplot(blast, aes((blast$pident * (blast$qend - blast$qstart)), bitscore)) + geom_point(alpha=0.1) + geom_smooth()
+```
+
+
+
+
+
+
+
+
+
+
+
+
